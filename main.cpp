@@ -10,9 +10,12 @@
 void get_words(std::vector<std::string>& input)
 {
 	std::ifstream infile("wordlist.txt");
+	infile.ignore();
 	std::string word;
 	while (std::getline(infile, word, ','))
 		input.push_back(word);
+	//removes terminating newline
+	input.back().pop_back();
 	return;
 }
 
