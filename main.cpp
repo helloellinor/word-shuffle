@@ -5,7 +5,6 @@
 #include <string>
 #include <vector>
 
-
 //-----------------------------------------------------------------------------
 
 void get_words(std::vector<std::string>& input)
